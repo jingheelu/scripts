@@ -1,16 +1,16 @@
 [user]
 	name = Jin-Ghee Lu
 	email = jin-ghee.lu@tradingtechnologies.com
-	editor = vim
+	editor = vi
 
 [alias]
-    glog = log --graph --date-order --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-    myglog = log --graph --date-order --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --author="Jin-Ghee Lu"
-    st = status
-    co = checkout
-    br = branch
-    dm = difftool --extcmd=meld
-    mm = mergetool --tool=meld
+        glog = log --graph --date-order --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+        myglog = log --graph --date-order --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --author="YOUR_NAME"
+        st = status
+        co = checkout
+        br = branch
+        dm = difftool --extcmd=meld
+        mm = mergetool --tool=meld
 
 [color]
 	ui = true
