@@ -6,9 +6,13 @@ if [ -f /etc/bashrc ]; then
 fi
 
 #alias
-alias makeoc='make -j4 cme cfe ice'
-alias mo='make -j4 cme cfe ice'
-alias mc='make -j4 cme cfe ice'
+alias dmake='make -r -R -j8 --quiet -C$HOME/dev-root/debesys show_progress=1'
+alias gg='~/dev-root/debesys/ext/linux/x86-64/release/opt/gcc-4.8.1/bin/g++'
+alias la='ls -l --color=auto'
+alias reb='cd ~/run-root/debesys'
+alias makeoc='make -j4 cme cfe ice eurex'
+alias mo='make -j4 cme cfe ice eurex'
+alias mc='make -j4 cme cfe ice eurex'
 alias tree='ls -R | grep ":$" | sed -e '"'"'s/:$//'"'"' -e '"'"'s/[^-][^\/]*\//--/g'"'"' -e '"'"'s/^/   /'"'"' -e '"'"'s/-/|/'"'"
 alias deb='cd ~/dev-root/debesys'
 
@@ -20,6 +24,9 @@ export LIBRARY_PATH=$LIBRARY_PATH:/usr/lib/x86_64-linux-gnu
 
 # Java location for debesys builds
 export JAVA_HOME=/usr/java/jdk1.7.0_17
+
+# Misc. env vars (chef)
+export EDITOR=vim
 
 GIT_PS1_SHOWDIRTYSTATE=true
 . ~/.git-prompt.sh

@@ -1,7 +1,7 @@
 [user]
 	name = Jin-Ghee Lu
 	email = jin-ghee.lu@tradingtechnologies.com
-	editor = vi
+	editor = vim
 
 [alias]
         glog = log --graph --date-order --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
